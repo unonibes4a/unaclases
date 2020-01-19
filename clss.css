@@ -37,7 +37,7 @@
     left: 1%;
     width: 30%;
     height: 20%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.212);
     z-index: 7;
     }
     #iddownder{
@@ -46,7 +46,7 @@
     left: 78%;
     width: 22%;
     height: 20%;
-    background-color: rgb(7, 7, 7);
+    background-color: rgba(7, 7, 7, 0.226);
     z-index: 7;
     
     color: blanchedalmond;
