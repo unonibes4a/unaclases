@@ -1,5 +1,5 @@
 
-var urlmicanal="https://player.twitch.tv/?channel=unonubestres";
+var urlmicanal="https://www.youtube.com/embed/VnbKPJA2ykU";//"https://player.twitch.tv/?channel=unonubestres";
 
 var alumnonombre="";
 var alumnopass="";
