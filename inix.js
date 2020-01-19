@@ -48,14 +48,16 @@ function inicifireabse(){
 
     
     
-  if(cambiosdecanalesfire>1){cambiosdecanalesfire
-    arrayfirecanes["uno"];
+  if(cambiosdecanalesfire>1){
 
+    
+
+    
     
 
     urlmicanal=arrayfirecanes["uno"];
  
-    
+    cambiariframe(urlmicanal);
 
 
   }
@@ -134,6 +136,21 @@ $( document ).ready(function() {
 
       });
 
+      setInterval(function(){
+
+        if(navigator.onLine) {
+          // el navegador está conectado a la red
+          document.getElementById("idsininternet").style.display="none";
+      } else {
+          // el navegador NO está conectado a la red
+              // el navegador está conectado a la red
+         
+              
+          document.getElementById("idsininternet").style.display="block";
+      }
+      
+      },4000);
+
 });
 
   function cambiariframe(stw){
@@ -195,20 +212,7 @@ function fbtidbtsendpregunt() {
   document.getElementById("idpanelquieropreguntar").style.display="none";
  }
 
-setInterval(function(){
 
-  if(navigator.onLine) {
-    // el navegador está conectado a la red
-    document.getElementById("idsininternet").style.display="none";
-} else {
-    // el navegador NO está conectado a la red
-        // el navegador está conectado a la red
-   
-        
-    document.getElementById("idsininternet").style.display="block";
-}
-
-},4000);
 
 
 
