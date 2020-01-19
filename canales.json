@@ -1,10 +1,12 @@
 {
     "canal1" : {
-        "id" : "id0",
-      "idname" : "canal1",
+        "miru":"//ok.ru/videoembed/1577116507760",
+        "as":"https://www.youtube.com/embed/EEIk7gwjgIM",
+        "id" : "//ok.ru/videoembed/1401750298119",
+      "idname" : "https://www.youtube.com/embed/EEIk7gwjgIM",
       "title":"https://www.nimo.tv/embed/6803727046",
       "img" : "https://player.twitch.tv/?channel=unonubestres",
-      "pg" : "https://player.twitch.tv/?channel=unonubestres"
+      "pg" : "//ok.ru/videoembed/1577116507760"
       }
   
  
