@@ -34,10 +34,10 @@
     #idsuperiorizq{
         position: absolute;
     top: 0%;
-    left: 11%;
-    width: 20%;
+    left: 1%;
+    width: 30%;
     height: 20%;
-    background-color: rgba(0, 0, 0, 0.562);
+    background-color: rgb(0, 0, 0);
     z-index: 7;
     }
     #iddownder{
