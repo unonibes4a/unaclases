@@ -1,6 +1,9 @@
 
-var urlmicanal="https://www.youtube.com/embed/VnbKPJA2ykU";//"https://player.twitch.tv/?channel=unonubestres";
+var urlmicanal="";//"https://player.twitch.tv/?channel=unonubestres";
 
+var arrayfirecanes=[];
+var cambiosdecanalesfire=0;
+var arrarycanales=[];
 var alumnonombre="";
 var alumnopass="";
 var alumnopregunta="";
@@ -39,6 +42,33 @@ function inicifireabse(){
     console.log("The read failed: " + errorObject.code);
   });
 
+  firebase.database().ref().child("canales").on("value", function(snapshot) {
+    arrayfirecanes=[];
+    arrayfirecanes=snapshot.val();
+
+    
+    
+  if(cambiosdecanalesfire>1){cambiosdecanalesfire
+    arrayfirecanes["uno"];
+
+    
+
+    urlmicanal=arrayfirecanes["uno"];
+ 
+    
+
+
+  }
+  else{}
+     
+    
+  cambiosdecanalesfire=cambiosdecanalesfire+1;
+
+
+
+  }, function (errorObject) {
+    console.log("The read failed: " + errorObject.code);
+  });
 
 
   firebase.database().ref().child("estudiantes").on("value", function(snapshot) {
@@ -84,7 +114,9 @@ $( document ).ready(function() {
    
     urlmicanal="im.jpg";
 
-    cambiariframe(urlmicanal);
+ 
+    
+
    /* $.getJSON('canal.json', function (data) {
       
       });*/
@@ -92,7 +124,7 @@ $( document ).ready(function() {
       inicifireabse();
 
 
-
+      traejsoncanales();
       
       
       $("#iddownder").click(function(){
@@ -243,8 +275,34 @@ function fcerrartresbotones() {
       console.log(arrayestudiantesuser[i].user);
       if(arrayestudiantesuser[i].user==alumnonombre && arrayestudiantesuser[i].pass==alumnopass){
         document.getElementById("idpanellogin").style.display="none";
+
+        cambiariframe(urlmicanal);
       }
       else{}
 
     }  
   }
+
+
+
+  function traejsoncanales(){
+  
+
+    $.getJSON("canales.json", function(result){    
+      arrarycanales=[]; 
+     arrarycanales=result; 
+
+
+     
+     
+     urlmicanal=arrarycanales["canal1"].pg;
+
+     
+
+  
+     
+   });
+}
+
+
+//
