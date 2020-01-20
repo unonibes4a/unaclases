@@ -107,15 +107,19 @@ function preguntarenclase(namex,preguntax){
 
 
 
+var vw=window.innerWidth;
+var vh= window.innerHeight;
 
 
 // fin d e firebase
 
 $( document ).ready(function() {
 
-   
+   vw=window.innerWidth;
+   vh= window.innerHeight;
     urlmicanal="im.jpg";
 
+    alert(vw+"          "+ vh);
  
     
 
@@ -150,6 +154,7 @@ $( document ).ready(function() {
       }
       
       },4000);
+
 
 });
 
