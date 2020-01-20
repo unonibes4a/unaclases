@@ -119,7 +119,8 @@ $( document ).ready(function() {
    vh= window.innerHeight;
     urlmicanal="im.jpg";
 
-    alert(vw+"          "+ vh);
+
+    
  
     
 
@@ -195,14 +196,16 @@ function fbtidbtsendpregunt() {
   document.getElementById("idpanelquieropreguntar").style.display="none";
   if(document.getElementById("idinputquieropreguntar").value==""){
 
-    alert("Campo vacio ");
+    mialert("Campo vacio ");
   }
   else{
     try {
       preguntarenclase(alumnonombre,alumnopregunta);
-      alert("Se envio la pregunta");
+      mialert("Se envio la pregunta");
     } catch (error) {
-      alert("No se envio la pregunta reinicie el sistema y compruebe internet");
+     
+      
+      mialert("No se envio la pregunta reinicie el sistema y compruebe internet");
     }
      
     
@@ -313,5 +316,11 @@ function fcerrartresbotones() {
    });
 }
 
-
+function mialert(st){
+document.getElementById("idelalerta").style.display="flex";
+document.getElementById("idpalert").innerHTML=st;
+setTimeout(function (){
+  document.getElementById("idelalerta").style.display="none";
+},1300);
+}
 //

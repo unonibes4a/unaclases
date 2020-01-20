@@ -1,5 +1,7 @@
 {
     "canal1" : {
+        "mixer":"https://mixer.com/embed/player/toxin3r?disableLowLatency=1",
+        "dlive":"https://dlive.tv/DannMX00?ref=unonubestres",
         "miru":"//ok.ru/videoembed/1577116507760",
         "as":"https://www.youtube.com/embed/EEIk7gwjgIM",
         "id" : "//ok.ru/videoembed/1401750298119",
